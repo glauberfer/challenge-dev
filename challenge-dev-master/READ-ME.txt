@@ -1,0 +1,8 @@
+Executar o script.sql no banco de dados SQL SERVER.
+
+Colocar a connection string de acesso do banco de dados que foi executado o script acima na arquivo:
+challenge-dev-master\Challenge\Challenge\appsettings.Development.json
+
+Executar o projeto
+
+Todas chamadas estão na collection do postman

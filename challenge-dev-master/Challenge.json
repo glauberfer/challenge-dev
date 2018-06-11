@@ -1,0 +1,169 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Challenge",
+		"_postman_id": "8796a918-e23f-3711-6163-ba82b370437e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Motorista",
+			"description": "",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:61663/api/Motorista/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"url": "http://localhost:61663/api/Motorista",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://localhost:61663/api/Motorista/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:61663/api/Motorista",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"id\": 1,\n        \"primeiroNome\": \"Glauber\",\n        \"ultimoNome\": \"Fernandes\",\n        \"endereco\": \"completo\",\n        \"dataCadastro\": \"2018-06-08T12:01:57.877\",\n        \"dataExclusao\": null,\n        \"carro\": null\n    }\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://localhost:61663/api/Motorista",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"primeiroNome\": \"teste\",\n    \"ultimoNome\": \"test\",\n    \"endereco\": \"completo\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carro",
+			"description": "",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"url": "http://localhost:61663/api/Carro/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"url": "http://localhost:61663/api/Carro",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"url": "http://localhost:61663/api/Carro/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"url": "http://localhost:61663/api/Carro",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"modelo\": \"208\",\n    \"placa\": \"fuo-9080\",\n    \"marca\": \"peugeot \"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"url": "http://localhost:61663/api/Carro",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"motoristaID\": 1,\n    \"modelo\": \"2008\",\n    \"placa\": \"fuo-7080\",\n    \"marca\": \"peugeot \"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
